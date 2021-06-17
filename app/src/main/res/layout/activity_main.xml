@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="60dp">
+
+        <TextView
+            android:id="@+id/textPaoECia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Pão &amp; Cia"
+            android:textColor="#603322"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/bread"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textControleDeInsumos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:text="Controle de insumos"
+            android:textColor="#603322"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textFarinhaDeTrigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farinha de trigo"
+            android:textColor="#603322"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textFarinhaDeTrigoDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Insira a quantidade de farinha de trigo disponível no estoque em Kg."
+            android:textColor="#80603322"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/decrementButtonKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FFF"
+                app:srcCompat="@drawable/decrement_button"
+                tools:ignore="VectorDrawableCompat" />
+
+            <EditText
+                android:id="@+id/inputKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingHorizontal="20dp"
+                android:text="0"
+                android:textColor="#603322"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/incrementButtonKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FFF"
+                app:srcCompat="@drawable/increment_button"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textAgua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Água"
+            android:textColor="#603322"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textAguaDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Insira a quantidade de água disponível no estoque em litros."
+            android:textColor="#80603322"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/decrementButtonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FFF"
+                app:srcCompat="@drawable/decrement_button"
+                tools:ignore="VectorDrawableCompat" />
+
+            <EditText
+                android:id="@+id/inputL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingHorizontal="20dp"
+                android:text="0"
+                android:textColor="#603322"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/incrementButtonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FFF"
+                app:srcCompat="@drawable/increment_button"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonGravar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#914F3B"
+            android:onClick="gravaPreferencias"
+            android:text="Gravar"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#603322" />
+
+    </LinearLayout>
+</ScrollView>
